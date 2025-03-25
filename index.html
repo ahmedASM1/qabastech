@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QabasTech - Innovative Technology Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Add Three.js for Vanta -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+</head>
+<body>
+    <!-- Background container for Vanta.js -->
+    <div id="vanta-background"></div>
+    
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#home" class="logo">
+                    <img src="assets/logo.svg" alt="QabasTech Logo">
+                    <span data-text="QABASTECH">QABASTECH</span>
+                </a>
+                
+                <div class="nav-right">
+                    <!-- Main Navigation -->
+                    <nav class="nav-menu">
+                        <a href="#home" class="nav-link" data-translate="home">Home</a>
+                        <a href="#about" class="nav-link" data-translate="about">About</a>
+                        <a href="#services" class="nav-link" data-translate="services">Our Services</a>
+                        <a href="#solutions" class="nav-link" data-translate="solutions">Our Solutions</a>
+                        <a href="#contact" class="nav-link" data-translate="contact">Contact Us</a>
+                    </nav>
+                    
+                    <!-- Hamburger Menu Button - Always on right -->
+                    <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    
+    <!-- Mobile Menu Panel - Always right side -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-container">
+            <!-- Close button -->
+            <button class="mobile-menu-close">
+                ✕
+            </button>
+            
+            <!-- Mobile Navigation Links -->
+            <nav class="mobile-nav">
+                <a href="#home" class="mobile-nav-link active" data-translate="home">Home</a>
+                <a href="#about" class="mobile-nav-link" data-translate="about">About</a>
+                <a href="#services" class="mobile-nav-link" data-translate="services">Our Services</a>
+                <a href="#solutions" class="mobile-nav-link" data-translate="solutions">Our Solutions</a>
+                <a href="#contact" class="mobile-nav-link" data-translate="contact">Contact Us</a>
+            </nav>
+            
+            <!-- Mobile Menu Footer Controls -->
+            <div class="mobile-menu-footer">
+                <!-- Mobile Language Switcher -->
+                <div class="mobile-control-item">
+                    <span data-translate="language">Language</span>
+                    <div class="mobile-lang-switcher">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <span class="lang-divider">|</span>
+                        <button class="lang-btn" data-lang="ar">عربي</button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Theme Toggle -->
+                <div class="mobile-control-item">
+                    <span data-translate="themeMode">Theme Mode</span>
+                    <button class="mobile-theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Sections -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">
+                    <span data-translate="heroTitle1">TAILOR-MADE STRATEGIES</span>
+                    <span data-translate="heroTitle2">CRAFTED TO ADDRESS</span>
+                    <span data-translate="heroTitle3">YOUR INNOVATION NEEDS</span>
+                </h1>
+                <p class="hero-description" data-translate="heroDescription">
+                    QabasTech is committed to ensuring the highest levels of ongoing support for the critical infrastructure and applications that drive your business forward.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add mission and vision section after hero section -->
+        <!-- Hero Section End -->
+        
+        <!-- Mission & Vision Section -->
+        <section class="mission-vision" id="mission-vision">
+            <div class="container">
+                <div class="mission-vision-content">
+                    <div class="vision-box" data-aos="fade-right" data-aos-delay="100">
+                        <div class="icon-container">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h2 data-translate="ourVision">OUR VISION</h2>
+                        <p data-translate="visionText">Delight Customers' offering Creative, Distinctive & Customized Services and Solutions in the field of Information Technology and Telecommunications by adopting Innovative and Emerging Technologies thereby Attaining Leadership position among the top Saudi Service Providers.</p>
+                    </div>
+                    
+                    <div class="mission-box" data-aos="fade-left" data-aos-delay="300">
+                        <div class="icon-container">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h2 data-translate="ourMission">OUR MISSION</h2>
+                        <p data-translate="missionText">Exceed the expectations of employees and customers there by becoming the first choice IT services provider to our clients. Leadership position among the top Saudi Service Providers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title float-animation" data-aos="fade-up" data-translate="whyQabas">WHY SHOULD YOU CONSIDER QABASTECH?</h2>
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <p data-translate="aboutText1">Qabas Tech is a Saudi Company based in Riyadh, one of the best technology service providers in Saudi Arabia Founded 2010.</p>
+                        <p data-translate="aboutText2">As a dedicated managed services provider, Qabas tech is committed to ensuring the highest levels of ongoing support for the critical infrastructure and applications that drive your business forward. Outstanding support is based on predictable and measurable resolution processes that you can rely on for effective communication, ticket management, and incident resolution.</p>
+                    </div>
+                    <div class="stats" data-aos="fade-left">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>15+</h3>
+                                <p data-translate="yearsExperience">Years of Experience</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>200+</h3>
+                                <p data-translate="completedProjects">Completed Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up" data-translate="servicesTitle">HOW WE CAN HELP YOU</h2>
+                
+                <div class="services-grid" data-aos="fade-up">
+                    <!-- Service 1: Customer Experience -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <div class="icon-bg blue-bg">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <h3 data-translate="service1Title">CUSTOMER EXPERIENCE</h3>
+                        <p data-translate="service1Text">End-to-end solutions, from designing the customer journey to improving user interfaces, ensuring a seamless and engaging experience across all touchpoints.</p>
+                    </div>
+                    
+                    <!-- Service 2: Digital Transformation -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <div class="icon-bg purple-bg">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                        <h3 data-translate="service2Title">DIGITAL TRANSFORMATION</h3>
+                        <p data-translate="service2Text">Designing digital services, developing custom mobile applications, migrating systems to the cloud, and implementing metaverse solutions to deliver innovative and integrated experiences.</p>
+                    </div>
+                    
+                    <!-- Service 3: Innovation -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <div class="icon-bg light-blue-bg">
+                                <i class="far fa-lightbulb"></i>
+                            </div>
+                        </div>
+                        <h3 data-translate="service3Title">INNOVATION</h3>
+                        <p data-translate="service3Text">Holistic innovation strategies, encompassing the creation of innovation hubs, tailored incubation and acceleration programs, and the orchestration of hackathons to foster groundbreaking ideas, driving growth and advancement.</p>
+                    </div>
+                    
+                    <!-- Service 4: Digital Marketing -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <div class="icon-bg blue-bg">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <h3 data-translate="service4Title">DIGITAL MARKETING</h3>
+                        <p data-translate="service4Text">A to Z innovative digital marketing solutions designed to elevate your online presence and enhance engagement with your target audience.</p>
+                    </div>
+                    
+                    <!-- Service 5: Artificial Intelligence -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <div class="icon-bg purple-bg">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <h3 data-translate="service5Title">ARTIFICIAL INTELLIGENCE</h3>
+                        <p data-translate="service5Text">Cutting-edge AI solutions that enhance operational efficiency, empower intelligent decision-making, and boost performance through big data analytics and the implementation of machine learning and deep learning technologies.</p>
+                    </div>
+                    
+                    <!-- Service 6: Consulting and Strategic Planning -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <div class="icon-bg light-blue-bg">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                        </div>
+                        <h3 data-translate="service6Title">CONSULTING AND STRATEGIC PLANNING</h3>
+                        <p data-translate="service6Text">Tailored consulting solutions aligned with your unique objectives, offering strategic insights to drive success and ensuring seamless execution at every stage of your projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries Section -->
+        <section id="industries" class="industries">
+            <div class="container">
+                <div class="industries-content">
+                    <div class="industries-text" data-aos="fade-right">
+                        <h2 class="section-title" data-translate="industriesTitle">INDUSTRIES WE SUPPORT AND TRANSFORM</h2>
+                        <p data-translate="industriesText">As needs are numerous and varied, QabasTech takes a holistic approach to innovation, gaming, and technology investments, focusing on the major priorities of all public and private entities. This includes creating more seamless user experiences across all platforms, optimizing performance through advanced data analytics, and fostering creative solutions to drive growth and strategic development initiatives.</p>
+                    </div>
+                    
+                    <div class="industries-graphic" data-aos="fade-left">
+                        <!-- Central innovation element -->
+                        <div class="central-icon">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#111" stroke="#444" stroke-width="2"/>
+                                <g fill="white">
+                                    <path d="M50 30 L55 45 L70 50 L55 55 L50 70 L45 55 L30 50 L45 45 Z"/>
+                                </g>
+                            </svg>
+                        </div>
+                        
+                        <!-- Industry bubbles -->
+                        <div class="industry-bubble" style="top: 20%; left: 20%; background: linear-gradient(135deg, #4a6bff 0%, #5e81ff 100%);" data-translate="industry1">
+                            Gaming & Animation
+                        </div>
+                        <div class="industry-bubble" style="top: 15%; left: 65%; background: linear-gradient(135deg, #4ad1ff 0%, #51bded 100%);" data-translate="industry2">
+                            Next-generation data centers
+                        </div>
+                        <div class="industry-bubble" style="top: 70%; left: 25%; background: linear-gradient(135deg, #c365ff 0%, #a15ad1 100%);" data-translate="industry3">
+                            Business productivity services
+                        </div>
+                        <div class="industry-bubble" style="top: 70%; left: 65%; background: linear-gradient(135deg, #6e54ff 0%, #8c72ff 100%);" data-translate="industry4">
+                            Innovation
+                        </div>
+                        
+                        <!-- Connector dots -->
+                        <div class="connector-dots">
+                            <div class="connector-dot" style="top: 30%; left: 40%;"></div>
+                            <div class="connector-dot" style="top: 45%; left: 70%;"></div>
+                            <div class="connector-dot" style="top: 55%; left: 40%;"></div>
+                            <div class="connector-dot" style="top: 40%; left: 30%;"></div>
+                            <div class="connector-dot" style="top: 50%; left: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Solutions Section -->
+        <section id="solutions" class="solutions">
+            <div class="container">
+                <div class="solutions-content">
+                    <div class="solutions-text" data-aos="fade-right">
+                        <h2 class="section-title" data-translate="solutionsTitle">INNOVATIVE SOLUTIONS FOR YOUR BUSINESS NEEDS</h2>
+                        <p data-translate="solutionsText">QabasTech identifies and implements IT solutions that address specific business needs. Combining technical expertise with an understanding of the unique requirements of the customer environment, we are able to identify optimal solutions for our clients.</p>
+                    </div>
+                    <div class="solutions-tags" data-aos="fade-left">
+                        <div class="tag internet-of-things">
+                            <span data-translate="solution1">Internet of Things (IoT)</span>
+                        </div>
+                        <div class="tag it-support">
+                            <span data-translate="solution2">IT Support and Managed Services</span>
+                        </div>
+                        <div class="tag strategy-planning">
+                            <span data-translate="solution3">Qabastech Strategy and Planning</span>
+                        </div>
+                        <div class="tag gaming-animation">
+                            <span data-translate="solution4">Gaming & Animation</span>
+                        </div>
+                        <div class="tag procurement">
+                            <span data-translate="solution5">Procurement</span>
+                        </div>
+                        <div class="tag security">
+                            <span data-translate="solution6">Security Consultancy</span>
+                        </div>
+                        <div class="tag innovation">
+                            <span data-translate="solution7">Innovation</span>
+                        </div>
+                        <div class="tag ai">
+                            <span data-translate="solution8">Artificial-intelligence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section id="partners" class="partners">
+            <div class="container">
+                <h2 class="section-title" data-translate="partnersTitle">OUR PARTNERS</h2>
+                
+                <p class="partners-description" data-translate="partnersDescription">
+                    As an independent provider of information technology services, Qabastech uses world-class products during the design and development of our technology solutions. Qabastech has established long-standing relationships with a network strategic partners that ensure we have access to hardware and software products required to implement our innovative solutions. Visit one of our Solutions pages to see how qabastech is leveraging our strategic partnerships to deliver world class IT consulting solutions to our customers today.
+                </p>
+                
+                <div class="partners-grid">
+                    <div class="partner-logo" aria-label="Logo">
+                        <img src="assets/partners/logo.svg" alt="McAfee Logo">
+                    </div>
+                    <div class="partner-logo" aria-label="Logo">
+                        <img src="assets/partners/stc.svg" alt="STC Logo">
+                    </div>
+                    <div class="partner-logo" aria-label="Logo">
+                        <img src="assets/partners/apple-logo.svg" alt="Apple Logo">
+                    </div>
+                    <div class="partner-logo" aria-label="Logo">
+                        <img src="assets/partners/SASCO_Logo.svg.png" alt="SASCO Logo">
+                    </div>
+                    <div class="partner-logo" aria-label="Logo">
+                        <img src="assets/partners/Mobily_Logo.svg" alt="Mobily Logo">
+                    </div>
+                    <div class="partner-logo" aria-label="Logo">
+                        <img src="assets/partners/KAFD_logo.svg.png" alt="KAFD Logo">
+                    </div>
+                    <div class="partner-logo" aria-label="Logo">
+                        <img src="assets/partners/BMW.svg.png" alt="BMW Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Alliances Section -->
+        <section id="alliances" class="alliances">
+            <div class="container">
+                <h2 class="section-title" data-translate="alliancesTitle">QABASTECH Technology Alliances</h2>
+                <p class="alliances-description" data-translate="alliancesDescription">
+                    Our technology alliances enable us to deliver integrated solutions that address complex business challenges and provide innovative technologies to help you stay ahead of the competition.
+                </p>
+                
+                <div class="alliances-grid">
+                    <div class="alliance-logo" aria-label="Logo">
+                        <img src="assets/alliances/mcdonald-s-15-logo.svg" alt="McDonald's Logo">
+                    </div>
+                    <div class="alliance-logo" aria-label="Logo">
+                        <img src="assets/alliances/forbes-logo.svg" alt="Forbes Logo">
+                    </div>
+                    <div class="alliance-logo" aria-label="Logo">
+                        <img src="assets/alliances/jira.svg" alt="Jira Logo">
+                    </div>
+                    <div class="alliance-logo" aria-label="Logo">
+                        <img src="assets/alliances/nissan-6-logo-svg-vector.svg" alt="Nissan Logo">
+                    </div>
+                    <div class="alliance-logo" aria-label="Logo">
+                        <img src="assets/alliances/soundcloud-logo.svg" alt="Soundcloud Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up" data-translate="contactTitle">CONTACT US</h2>
+                <div class="contact-content">
+                    <form class="contact-form" data-aos="fade-up">
+                        <div class="form-group">
+                            <input type="text" data-translate-placeholder="namePlaceholder" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" data-translate-placeholder="emailPlaceholder" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea data-translate-placeholder="messagePlaceholder" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" data-translate="sendButton">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="QabasTech Logo">
+                    </div>
+                    <div class="footer-contact">
+                        <p data-translate="address1">P.O Box 87205, Riyadh 11642, Kingdom Of Saudi Arabia</p>
+                        <p data-translate="address2">Moon Tower, Al Hadrawi, Ar Rahmaniyyah, Riyadh 12341</p>
+                        <p data-translate="phone">Phone: +966 11 2111896</p>
+                    </div>
+                    <div class="footer-social">
+                        <h4 data-translate="followUs">Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link twitter-link" aria-label="Twitter">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link linkedin-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4 data-translate="quickLinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-translate="home">Home</a></li>
+                        <li><a href="#about" data-translate="about">About</a></li>
+                        <li><a href="#services" data-translate="services">Our Services</a></li>
+                        <li><a href="#solutions" data-translate="solutions">Our Solutions</a></li>
+                        <li><a href="#contact" data-translate="contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 QabasTech. <span data-translate="rightsReserved">All Rights Reserved</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
